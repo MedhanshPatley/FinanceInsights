@@ -34,3 +34,4 @@ __pycache__/
 # Flask environment variables
 instance/
 .env
+git commit -m "Initial commit: Added frontend and backend"
