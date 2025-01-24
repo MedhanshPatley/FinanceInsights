@@ -52,7 +52,8 @@ def fetch_insights(ticker):
         }
 
         # Generate AI analysis (ensure the AI setup is correct)
-        genai.configure(api_key='AIzaSyA-uFsZTUYNEpx58HMrpMDXKP4ogVVmyPc')
+        # genai.configure(api_key='AIzaSyA-uFsZTUYNEpx58HMrpMDXKP4ogVVmyPc')
+        genai.configure(api_key=os.environ.get('GEMINI_API_KEY'))
         model = genai.GenerativeModel('gemini-1.5-flash-8b')
 
         insights_text = "\n".join([f"{k}: {v}" for k, v in insights.items()])
