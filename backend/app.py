@@ -9,6 +9,7 @@ CORS(app)
 @app.route('/api/stock-analysis', methods=['POST'])
 def stock_analysis():
     try:
+        
         data = request.get_json()
         ticker = data.get('ticker', None)
 
