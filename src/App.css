@@ -1,0 +1,37 @@
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.stock-selector {
+  margin-bottom: 20px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.stock-details {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.stock-info p {
+  margin: 10px 0;
+}
+
+.loading {
+  text-align: center;
+  color: #666;
+  margin-top: 20px;
+}
