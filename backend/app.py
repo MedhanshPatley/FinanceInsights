@@ -2,9 +2,11 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import yfinance as yf
 import google.generativeai as genai
+import os
+from collections.abc import Iterable  # Add this import
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 @app.route('/api/stock-analysis', methods=['POST'])
 def stock_analysis():
